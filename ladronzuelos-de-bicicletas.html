@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Ladronzuelos de bicicletas</title>
 </head>
+
 <body>
-  
+  <h1>Ladronzuelos de bicicletas</h1>
+  <form>
+
+    <fieldset>
+      <legend>
+        <h2>Fecha y hora del robo</h2>
+      </legend>
+
+      <label for="fecha" tabindex="1" >Día:</label>
+      <input type="date" name="fecha" id="fecha" autofocus><br><br>
+
+      <label for="tiempo">Hora:</label>
+      <input type="time" name="tiempo" id="tiempo">
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h2>Color y valor</h2>
+      </legend>
+
+      <label for="color">Color de la bicicleta:</label>
+      <input type="color" name="color" id="color"><br><br>
+
+      <label for="precio">Rango de precio:</label>
+      <span> 100 €</span>
+      <input type="range" step="6" name="precios" id="precios" min="0" max="50">
+      <span> 1000 €</span>
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h2>Tipo de bicicleta</h2>
+      </legend>
+
+      <label for="paseo">Paseo:</label>
+      <select id="paseo" name="paseo">
+        <option value="noselected" selected></option>
+        <option value="señorial">Señorial</option>
+        <option value="antiplebeyos">Anti-plebeyos</option>
+        <option value="porencimadelhombro">PorEncimaDelHombro</option>
+      </select>
+
+      <label for="montaña">Montaña:</label>
+      <select id="montaña" name="montaña">
+        <option value="noselected" selected></option>
+        <option value="gamusinos">Gamusinos</option>
+        <option value="hueleflorespremium">Hueleflores premium</option>
+        <option value="fangolover">Fango lover</option>
+      </select>
+
+      <label for="carreras">Carreras:</label>
+      <select id="carreras" name="carreras">
+        <option value="noselected" selected></option>
+        <option value="metroymedio">Metroymedio</option>
+        <option value="fluorescente-edition">3 de la tarde. Fluorescente edition</option>
+        <option value="grupitors">Grupitors</option>
+      </select>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h2>Accesorios</h2>
+      </legend>
+
+      
+      <select id="accesorios" name="accesorios" size="4" multiple>
+        <option value="ruedines">Ruedines</option>
+        <option value="pegatinas">Pegatinas</option>
+        <option value="bombadeaire">Bomba de aire</option>
+        <option value="timbre">Timbre</option>
+        <option value="foco">Foco</option>
+      </select>
+
+
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h2>¿Qué marca era?</h2>
+      </legend>
+
+      <input list="marca">
+      <datalist id="marca">
+        <option value="specialized">
+        <option value="trek">
+        <option value="merida">
+        <option value="scott">
+        <option value="giant">
+        <option value="cube">
+        <option value="lapierre">
+        <option value="orbea">
+        <option value="cannondale">
+        <option value="bmc">
+        <option value="canyon">
+        <option value="look">
+        <option value="protek">
+        <option value="megamo">
+        <option value="pinarello">
+        <option value="bianchi">
+        <option value="bh">
+        <option value="factor">
+        <option value="ghost">
+        <option value="cervélo">
+        <option value="argon">
+      </datalist>
+
+    </fieldset><br>
+
+
+    <input type="submit" value="Enviar Formulario">
+
+    <input type="reset" value="Reset" >
+
 </body>
+
 </html>
